@@ -12,7 +12,7 @@ $(function(){
         var today = new Date();
         //var finalTime = new Date("Sep,1,"+newYear);
         var finalTime = new Date("Dec,3,2016");
-        var interval = finalTime - today;
+        var interval = finalTime - today + (1000*60*60*12);
         if(interval<0) interval = 0;
         var days = parseInt(interval/(1000*60*60*24));
         var daysLeft = interval%(1000*60*60*24);
