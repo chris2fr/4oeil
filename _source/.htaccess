@@ -1,0 +1,10 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.4eoeil.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^4eoeil.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.le4e.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^le4e.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.quatriemeoeil.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^quatriemeoeil.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^4oeil.com$ [NC]
+RewriteRule ^(.*)$ http://www.4oeil.com/$1 [R=302,L]
