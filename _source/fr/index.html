@@ -1,3 +1,7 @@
+---
+title 4e oeil studio photo
+lang: fr
+---
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +27,7 @@
         <link href="/css/ie9.css" rel="stylesheet" type="text/css" />
     <![endif]-->
     <link rel="shortcut icon" href="/img/favicon.ico" />
-  	<title>4e oeil studio photo</title>
+  	<title>{{ page.title }}</title>
 </head>
 <body class="fonts-1">
 
@@ -226,12 +230,7 @@
                     </div>
                     <div class="col-md-6 col-xs-text-center col-md-text-right">
                         <div class="follow">
-                            <span class="title">Follow me:</span>
-                            <a class="entry" href="/fr/https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
-                            <a class="entry" href="/fr/https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a class="entry" href="/fr/https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest-p"></i></a>
-                            <a class="entry" href="/fr/https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
-                            <a class="entry" href="/fr/https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a>
+                            {% include follow.html %}
                         </div>
                     </div>
                 </div>
