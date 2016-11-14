@@ -68,72 +68,12 @@
 
                                     <div class="navigation-overflow">
                                         <nav class="text-left clearfix">
-                                            <ul>
-                                                <li class="active">
-                                                    <a href="/fr/index.html">Home</a>
-                                                </li>
-                                                <li>
-                                                    <a href="/fr/a-propos/index.html">A propos</a>
-                                                </li>
-                                                <li>
-                                                    <a href="/fr/portfolio/index.html">Portfolio</a>
-                                                    <span class="toggle-icon"></span>
-                                                    <ul>
-                                                        <li>
-                                                            <a href="/fr/portfolio/genre/index.html">Par Genre</a>
-                                                            <span class="toggle-icon"></span>
-                                                            <ul>
-                                                                <li><a href="/fr/portfolio/genre/portraits/index.html">Portraits</a></li>
-                                                                <li><a href="/fr/portfolio/genre/produits/index.html">Produits</a></li>
-                                                                <li><a href="/fr/portfolio/genre/mariages/index.html">Mariages</a></li>
-                                                                <li><a href="/fr/portfolio/genre/reportages/index.html">Reportages</a></li>
-                                                                <li><a href="/fr/portfolio/genre/evenements/index.html">Evenements</a></li>
-                                                                <li><a href="/fr/portfolio/genre/entreprise/index.html">Communication d'entreprise</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>
-                                                            <a href="/fr/portfolio/projets/index.html">Projets</a>
-                                                            <span class="toggle-icon"></span>
-                                                            <ul>
-                                                                <li><a href="/fr/portfolio/projets/2016/4oeil/anges/index.html">On n'est pas des anges, juin 2016</a></li>
-                                                                <li><a href="/fr/portfolio/projets/2016/4oeil/pourquoi/index.html">Pourquoi tu te mouilles, août 2016</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-
-                                                <li>
-                                                    <a href="/fr/services/index.html">Services</a>
-                                                    <span class="toggle-icon"></span>
-                                                    <ul>
-                                                        <li>
-                                                            <a href="/fr/services/studio/index.html">Photographie de studio</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="/fr/services/exterieur/index.html">Photographie en extérieur</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="/fr/services/produits/index.html">Photographie de produits</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="/fr/services/entreprise/index.html">Communication d'entreprise</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-
-                                                <li>
-                                                    <a href="/fr/blog/index.html">Blog</a>
-                                                </li>
+                                            {% include menu.html %}
                                         </nav>
                                     </div>
 
                                     <div class="follow style-1">
-                                        <span class="title">Follow me:</span>
-                                        <a class="entry" href="#"><i class="fa fa-instagram"></i></a>
-                                        <a class="entry" href="#"><i class="fa fa-facebook"></i></a>
-                                        <a class="entry" href="#"><i class="fa fa-pinterest-p"></i></a>
-                                        <a class="entry" href="#"><i class="fa fa-twitter"></i></a>
-                                        <a class="entry" href="#"><i class="fa fa-google-plus"></i></a>
+                                        {% include follow.html %}
                                     </div>
                                     
                                 </div>
@@ -167,9 +107,9 @@
                                 <div class="slide-content">
                                     <div class="text">
                                         <div class="rotate">
-                                            <div class="slide-title h3">4e oeil studio photo</div>
+                                            <div class="slide-title h3 editable">4e oeil studio photo</div>
                                             <div class="empty-space col-xs-b15"></div>
-                                            <div class="slide-description simple-article large grey">Notre mission et notre passion au 4e oeil.</div>
+                                            <div class="slide-description simple-article large grey editable">Notre mission et notre passion au 4e oeil.</div>
                                         </div>
                                     </div>
                                     <div class="background-wrapper full-size">
@@ -215,9 +155,9 @@
                                 <div class="slide-content">
                                     <div class="text">
                                         <div class="rotate">
-                                            <div class="slide-title h3">Les photographes</div>
+                                            <div class="slide-title h3 editable">Les photographes</div>
                                             <div class="empty-space col-xs-b15"></div>
-                                            <div class="slide-description simple-article large grey">Nous sommes Chris MANN, Davide DEL GIUDICE, Jérémie WACH-CASTEL, Marine LALE réunis aux Grands voisins et à Bordeau.</div>
+                                            <div class="slide-description simple-article large grey editable">Nous sommes Chris MANN, Davide DEL GIUDICE, Jérémie WACH-CASTEL, Marine LALE réunis aux Grands voisins et à Bordeau.</div>
                                         </div>
                                     </div>
                                     <div class="background-wrapper full-size">
@@ -229,7 +169,7 @@
                                     </div>
                                     <div class="tags">
                                         <div class="rotate">
-                                            <div class="title"><i>photographes</i></div>
+                                            <div class="title editable"><i>photographes</i></div>
                                         </div>                                        
                                     </div>
                                 </div>
@@ -252,7 +192,7 @@
                                 </div>
                             </div>
                             <div class="text-center" style="width: 100%;">
-                                <a href="#" class="button type-1">view all projects</a>
+                                <a href="#" class="button type-1 editable">voir tous les projets</a>
                             </div>
                             <div class="slider-click right" data-pagination-rel="0">
                                 <div class="arrow"></div>
