@@ -6,8 +6,8 @@ $(function() {
 		var $this = $(this);
 						   
 		$('.invalid').removeClass('invalid');						   
-		var msg = 'The following fields should be filled:',
-			successMessage = "We will be launching soon! Stay tuned and we will inform you first!",
+		var msg = 'Les champs suivants ont besoin d&apos;&ecirc;tre renseign&eacute;s:',
+			successMessage = "A tr&egrave;s vite!",
 			error = 0,
 			pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
 
