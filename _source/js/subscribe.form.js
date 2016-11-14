@@ -6,11 +6,10 @@ $(function() {
 		var $this = $(this);
 						   
 		$('.invalid').removeClass('invalid');						   
-		var msg = 'Les champs suivants ont besoin d&apos;&ecirc;tre renseign&eacute;s:',
-			successMessage = "A tr&egrave;s vite!",
+		var msg = 'Merci de tout remplir svp:',
+			successMessage = "A très vite !",
 			error = 0,
 			pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
-
 
         if (!pattern.test($.trim($this.find('input[name="email"]').val()))) {error = 1; $this.find('input[name="email"]').parent().addClass('invalid'); msg = msg +  '\n - Email';}
 
